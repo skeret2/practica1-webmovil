@@ -1,0 +1,300 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 120px;
+    background: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo {
+    font-size: 25px;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 600;
+}
+nav a {
+    font-size: 18px;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+nav a:hover,
+nav a.active {
+    color: #96c7e5;
+}
+section {
+    min-height: 100vh;
+    display: flex;
+    background: #8c5d8a;
+
+    color: #fff;
+}
+section:nth-child(odd) {
+    background: #96c7e5;
+}
+.container-home img{
+    display: block;
+    float: left;
+    padding: 5px;
+    width: 20%;
+    max-width: 100%;
+    height: auto;
+}
+.container-home h2{
+    font-size: 80px;
+    color: #fff;
+    margin-left:50px;
+    margin-top: 150px;
+    float: left;
+}
+.container-home p{
+    font-size: 25px;
+    color: #fff;
+    margin-top: 20px;
+    float: left;
+
+}
+.container-home{
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 100px;
+}
+.home-sci a{
+    font-size: 50px;
+    color: #96c7e5;
+}
+.home-sci a:hover{
+    background: #96c7e5;
+    color: #fff;
+    box-shadow: 0 0 20px #96c7e5;
+}
+.datop h2{
+    font-size: 70px;
+    text-align: center;
+}
+.datop p{
+    font-size: 30px;
+    margin-top: 30px;
+    text-align: center;
+}
+.datop{
+    margin-top: 150px;
+    margin-left: 500px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    height: 500px;
+    width: 800px;
+    background: #8c5d8a;
+}
+.intereses{
+    margin-top: 200px;
+    margin-left: 200px;
+}
+.intereses h2{
+    font-size: 70px;
+    font-family: Arial, Helvetica, sans-serif;
+    font: bold;
+}
+.intereses h3{
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 8px;
+}
+.intereses p {
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    padding-left: 20px;
+    list-style-type: none; /* Elimina los marcadores de lista */
+    margin: 0; /* Elimina el margen para que los elementos estén más juntos */
+}
+.intereses p::before {
+    content: '\2022'; /* Código del carácter para un punto */
+    color: #96c7e5; /* Color del punto */
+    position: absolute;
+    left: 0; 
+}
+.imagenes img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta la imagen para que cubra completamente el contenedor */
+}
+
+.herramientas-list{
+    margin-top: 200px;
+    margin-left: 200px;
+}
+.herramientas-list h2{
+    font-size: 70px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.herramientas-list p {
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    padding-left: 20px;
+    list-style-type: none; /* Elimina los marcadores de lista */
+    margin: 0;
+
+}
+
+.herramientas-list p::before {
+    content: '\2022'; /* Código del carácter para un punto */
+    color: #8c5d8a; /* Color del punto */
+    position: absolute;
+    left: 0; 
+}
+
+
+
+
+/* Estilos base */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para pantallas grandes */
+@media (min-width: 1200px) {
+    .container-home h2 {
+        font-size: 80px;
+        margin-left: 50px;
+        margin-top: 150px;
+    }
+    .container-home p {
+        font-size: 25px;
+        margin-top: 20px;
+    }
+    .datop {
+        margin-top: 150px;
+        margin-left: 500px;
+        height: 500px;
+        width: 800px;
+    }
+    .intereses {
+        margin-top: 200px;
+        margin-left: 200px;
+    }
+    .intereses h2 {
+        font-size: 70px;
+    }
+    .intereses h3,
+    .intereses p {
+        font-size: 25px;
+        padding: 8px;
+    }
+    .herramientas-list {
+        margin-top: 200px;
+        margin-left: 200px;
+    }
+    .herramientas-list h2,
+    .herramientas-list p {
+        font-size: 25px;
+        padding-left: 20px;
+    }
+}
+
+/* Estilos para pantallas medianas */
+@media (max-width: 1199px) {
+    .container-home h2 {
+        font-size: 60px;
+        margin-left: 30px;
+        margin-top: 100px;
+    }
+    .container-home p {
+        font-size: 20px;
+        margin-top: 15px;
+    }
+    .datop {
+        margin-top: 100px;
+        margin-left: 300px;
+        height: 400px;
+        width: 600px;
+    }
+    .intereses {
+        margin-top: 150px;
+        margin-left: 150px;
+    }
+    .intereses h2 {
+        font-size: 60px;
+    }
+    .intereses h3,
+    .intereses p {
+        font-size: 20px;
+        padding: 6px;
+    }
+    .herramientas-list {
+        margin-top: 150px;
+        margin-left: 150px;
+    }
+    .herramientas-list h2,
+    .herramientas-list p {
+        font-size: 20px;
+        padding-left: 20px;
+    }
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 767px) {
+    header {
+        padding: 20px 30px;
+    }
+    .logo {
+        font-size: 20px;
+    }
+    nav a {
+        font-size: 16px;
+        margin-left: 20px;
+    }
+    .container-home h2 {
+        font-size: 40px;
+        margin-left: 20px;
+        margin-top: 50px;
+    }
+    .container-home p {
+        font-size: 16px;
+        margin-top: 10px;
+        margin-left: 20px;
+    }
+    .datop {
+        margin-top: 50px;
+        margin-left: 100px;
+        height: 300px;
+        width: 400px;
+    }
+    .intereses {
+        margin-top: 100px;
+        margin-left: 50px;
+    }
+    .intereses h2 {
+        font-size: 50px;
+    }
+    .intereses h3,
+    .intereses p {
+        font-size: 18px;
+        padding: 6px;
+    }
+    .herramientas-list {
+        margin-top: 100px;
+        margin-left: 50px;
+    }
+    .herramientas-list h2,
+    .herramientas-list p {
+        font-size: 16px;
+        padding-left: 20px;
+    }
+}
